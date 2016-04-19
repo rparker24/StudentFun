@@ -1,5 +1,6 @@
 var prompt = require('prompt');
 var Student = require('./student.js');
+var Bus = require('./bus.js');
 
 prompt.start();
 prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', 'catchPhrase'], function(err, result) {
@@ -7,3 +8,5 @@ prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', '
 	console.log(JSON.stringify(student1));
 	student1.canStudentHaveFun();
 });
+
+var schoolBus = new Bus;
