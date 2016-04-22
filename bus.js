@@ -1,14 +1,16 @@
 function Bus(driverName, color, gas) {
-	var studentsOnTheBus = [];
-	var driverName = driverName;
-	var color = color;
-	var gas = gas;
-	var studentEntersBus = function(student) {
+	this.studentsOnTheBus = [];
+	this.driverName = driverName;
+	this.color = color;
+	this.gas = gas;
+	this.studentEntersBus = function(student) {
 		this.studentsOnTheBus.push(student);
 	}
-	var busChatter = function() {
+	this.busChatter = function() {
 		for(i=0; i < this.studentsOnTheBus.length; i++) {
-			console.log(this.studentsOnTheBus[i].catchPhrase);
+			if(this.studentsOnTheBus[i].canStudentHaveFun === true) {
+				console.log(this.studentsOnTheBus[i].catchPhrase);
+			}
 		}
 	}
 }

@@ -1,13 +1,10 @@
-function Student(name, gender, grade, gpa, detentions, sleepingInClass, catchPhrase) {
+function Student(name, gpa, detentions, catchPhrase) {
 	this.name = name;
-	this.gender = gender;
-	this.grade = grade;
 	this.gpa = gpa;
 	this.detentions = detentions;
-	this.sleepingInClass = sleepingInClass;
 	this.catchPhrase = catchPhrase;
 	this.canStudentHaveFun = function() {
-		if((this.detentions < 10) && (this.gpa > 2)) {
+		if((detentions < 10) && (gpa > 2)) {
 			return true;
 		} else {
 			return false;
