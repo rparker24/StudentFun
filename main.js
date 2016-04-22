@@ -9,4 +9,4 @@ prompt.get(['name', 'gender', 'grade', 'gpa', 'detentions', 'sleepingInClass', '
 	student1.canStudentHaveFun();
 });
 
-var schoolBus = new Bus;
+var schoolBus = new Bus('Jerry', 'orange', 100);

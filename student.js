@@ -1,16 +1,18 @@
 function Student(name, gender, grade, gpa, detentions, sleepingInClass, catchPhrase) {
-	var name = name;
-	var gender = gender;
-	var grade = grade;
-	var gpa = gpa;
-	var detentions = detentions;
-	var sleepingInClass = sleepingInClass;
-	var catchPhrase = catchPhrase;
-	var canStudentHaveFun = function() {
+	this.name = name;
+	this.gender = gender;
+	this.grade = grade;
+	this.gpa = gpa;
+	this.detentions = detentions;
+	this.sleepingInClass = sleepingInClass;
+	this.catchPhrase = catchPhrase;
+	this.canStudentHaveFun = function() {
 		if((this.detentions < 10) && (this.gpa > 2)) {
-			console.log("This student can have fun.");
+			return true;
+		} else {
+			return false;
 		}
-	}
+	};
 }
 
 module.exports = Student;
